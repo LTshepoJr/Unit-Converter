@@ -1,5 +1,93 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--quaternary-color);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #CCC1FF;
+    --tertiary-color: #3D3D3D;
+    --quaternary-color: #1F2937;
+    --quinary-color: #273549;
+    --senary-color: #B295FF;
+    --header-weight: 800;
+    --second-heading-weight: 600;
+    --paragraph-weight: 300;
+    --decenary-color: #3D3D3D;
+    --undecenary-color: #6943FF;
+}
+
+#mainOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--undecenary-color);
+}
+
+#mainHead {
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: var(--header-weight);
+    letter-spacing: -0.03em;
+    text-align: center;
+    margin: 24px 15px;
+
+}
+#userNumberInput {
+    color: var(--primary-color);
+    text-align: center;
+    background-color: var(--undecenary-color);
+    width: 117px;
+    height: 83px;
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    font-weight: var(--header-weight);
+    border: 2px solid var(--senary-color);
+    font-size: 58px;
+
+}
+
+#btn {
+    background-color: var(--primary-color);
+    color: var(--decenary-color);
+    box-shadow: 0px 1px 2px 0px #0000000D;
+    width: 117px;
+    height: 42px;
+    padding: 9px 27.5px 9px 27.5px;
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: var(--second-heading-weight);
+    text-align: left;
+    margin: 20px 0px;
+    border: 2px solid var(--primary-color);
+
+}
+
+#btn:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+  }
+
+.block {
+    background-color: var(--quinary-color);
+    text-align: center;
+    margin: 0 40px;
+}
+
+.subHead {
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: var(--second-heading-weight);
+    text-align: center;
 }
 /*https://www.figma.com/file/cqtGul0V8RFXY4vTcIv1Kc/Unit-Conversion?type=design&node-id=0-1&mode=design&t=UAqa6NqmjJHjXkdH-0*/
