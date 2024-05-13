@@ -18,7 +18,7 @@ body {
     --senary-color: #B295FF;
     --header-weight: 800;
     --second-heading-weight: 600;
-    --paragraph-weight: 300;
+    --paragraph-weight: 400;
     --decenary-color: #3D3D3D;
     --undecenary-color: #6943FF;
 }
@@ -40,6 +40,7 @@ body {
     margin: 24px 15px;
 
 }
+
 #userNumberInput {
     color: var(--primary-color);
     text-align: center;
@@ -71,17 +72,22 @@ body {
 
 }
 
-#btn:active{
-    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
-                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-      inset -4px -4px 6px 0 rgba(255,255,255,.2),
-      inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+#btn:active {
+    box-shadow:  4px 4px 6px 0 #ffffff4d,
+                -4px -4px 6px 0 #747d8833, 
+      inset -4px -4px 6px 0 #ffffff33,
+      inset 4px 4px 6px 0 #00000033;
+  }
+
+#btn:hover {
+    border: 2px solid var(--senary-color);
   }
 
 .block {
     background-color: var(--quinary-color);
     text-align: center;
     margin: 0 40px;
+    border-radius: 10px;
 }
 
 .subHead {
@@ -89,5 +95,14 @@ body {
     font-size: 20px;
     font-weight: var(--second-heading-weight);
     text-align: center;
+    padding-top: 20px;
+}
+
+p {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: var(--paragraph-weight);
+    text-align: center;
+    padding: 20px;
 }
 /*https://www.figma.com/file/cqtGul0V8RFXY4vTcIv1Kc/Unit-Conversion?type=design&node-id=0-1&mode=design&t=UAqa6NqmjJHjXkdH-0*/
