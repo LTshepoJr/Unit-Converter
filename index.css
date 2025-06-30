@@ -38,12 +38,6 @@ body {
   margin: 24px 15px;
 }
 
-/* #userNumberInput {
-    width: 117px;
-    height: 83px;
-    background-color: var(--shade-purple-color);
-    } */
-
 #number-input {
   font-size: 3em;
   border-radius: 5px;
