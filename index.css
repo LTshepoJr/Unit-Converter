@@ -1,108 +1,109 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--quaternary-color);
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-        "slnt" 0;
+  margin: 0;
+  padding: 0;
+  background-color: var(--quaternary-color);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 :root {
-    --primary-color: #FFFFFF;
-    --secondary-color: #CCC1FF;
-    --tertiary-color: #3D3D3D;
-    --quaternary-color: #1F2937;
-    --quinary-color: #273549;
-    --senary-color: #B295FF;
-    --header-weight: 800;
-    --second-heading-weight: 600;
-    --paragraph-weight: 400;
-    --decenary-color: #3D3D3D;
-    --undecenary-color: #6943FF;
+  --primary-color: #ffffff;
+  --secondary-color: #ccc1ff;
+  --quinary-color: #273549;
+  --quaternary-color: #1f2937;
+  --senary-color: #b295ff;
+  --header-weight: 800;
+  --second-heading-weight: 600;
+  --paragraph-weight: 400;
+  --decenary-color: #3d3d3d;
+  --shade-purple-color: #6943ff;
+  --shade-pink: #ec47ef;
 }
 
-#mainOne {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--undecenary-color);
+#input-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--shade-purple-color);
 }
 
-#mainHead {
-    color: var(--primary-color);
-    font-size: 28px;
-    font-weight: var(--header-weight);
-    letter-spacing: -0.03em;
-    text-align: center;
-    margin: 24px 15px;
-
+#heading {
+  color: var(--primary-color);
+  font-size: 28px;
+  font-weight: var(--header-weight);
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin: 24px 15px;
 }
 
-#userNumberInput {
-    color: var(--primary-color);
-    text-align: center;
-    background-color: var(--undecenary-color);
+/* #userNumberInput {
     width: 117px;
     height: 83px;
-    border-radius: 5px;
-    font-family: "Inter", sans-serif;
-    font-weight: var(--header-weight);
-    border: 2px solid var(--senary-color);
-    font-size: 58px;
+    background-color: var(--shade-purple-color);
+    } */
 
+#number-input {
+  font-size: 3em;
+  border-radius: 5px;
+  text-align: center;
+  color: var(--shade-purple-color);
+  font-family: "Inter", sans-serif;
+  border: 2px solid var(--senary-color);
+  font-weight: var(--header-weight);
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 200px;
+  padding: 8px 12px;
 }
 
 #btn {
-    background-color: var(--primary-color);
-    color: var(--decenary-color);
-    box-shadow: 0px 1px 2px 0px #0000000D;
-    width: 117px;
-    height: 42px;
-    padding: 9px 27.5px 9px 27.5px;
-    border-radius: 5px;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    font-weight: var(--second-heading-weight);
-    text-align: left;
-    margin: 20px 0px;
-    border: 2px solid var(--primary-color);
-
+  background-color: var(--primary-color);
+  color: var(--decenary-color);
+  padding: 1em 1.4em;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+  font-weight: var(--second-heading-weight);
+  margin: 20px 0px;
+  border: 2px solid var(--primary-color);
+  transition: all 0.2s ease-out;
 }
 
 #btn:active {
-    box-shadow:  4px 4px 6px 0 #ffffff4d,
-                -4px -4px 6px 0 #747d8833, 
-      inset -4px -4px 6px 0 #ffffff33,
-      inset 4px 4px 6px 0 #00000033;
-  }
+  background-color: var(--shade-pink);
+  border: 2px solid var(--shade-purple-color);
+  color: white;
+}
 
 #btn:hover {
-    border: 2px solid var(--senary-color);
-  }
+  border: 2px solid var(--senary-color);
+}
 
 .block {
-    background-color: var(--quinary-color);
-    text-align: center;
-    margin: 0 40px;
-    border-radius: 10px;
+  background-color: var(--quinary-color);
+  text-align: center;
+  margin: 0 40px;
+  border-radius: 10px;
 }
 
 .subHead {
-    color: var(--secondary-color);
-    font-size: 20px;
-    font-weight: var(--second-heading-weight);
-    text-align: center;
-    padding-top: 20px;
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: var(--second-heading-weight);
+  text-align: center;
+  padding-top: 20px;
 }
 
 p {
-    color: var(--primary-color);
-    font-size: 14px;
-    font-weight: var(--paragraph-weight);
-    text-align: center;
-    padding: 20px;
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: var(--paragraph-weight);
+  text-align: center;
+  padding: 20px;
 }
-/*https://www.figma.com/file/cqtGul0V8RFXY4vTcIv1Kc/Unit-Conversion?type=design&node-id=0-1&mode=design&t=UAqa6NqmjJHjXkdH-0*/
+
+span {
+  color: var(--shade-pink);
+}
