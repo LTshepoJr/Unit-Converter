@@ -6,7 +6,6 @@ const length = document.getElementById("length");
 const button = document.getElementById("btn");
 const volume = document.getElementById("volume");
 const mass = document.getElementById("mass");
-// commented out code is for safely inserting html code to the html file, but when I do it, the code is ran again and displays more than once//
 
 // const displayConversions = (number, feet, meter, pElement) => {
 //   const p = document.createElement("p");
