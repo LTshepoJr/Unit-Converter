@@ -1,6 +1,7 @@
 const meterToFeet = 3.281;
 const literToGallon = 0.264172;
 const kilogramToPound = 2.205;
+
 const numberInput = document.getElementById("number-input");
 const length = document.getElementById("length");
 const button = document.getElementById("btn");
@@ -18,7 +19,7 @@ const displayConversions = (number, input1, input2, pElement, text1, text2) => {
   p.appendChild(document.createTextNode(` | ${number} ${text1} = `));
   span2.textContent = `${input2} ${text2}`;
   p.appendChild(span2);
-
+  pElement.innerHTML = "";
   pElement.appendChild(p);
 };
 
@@ -43,12 +44,23 @@ function massConvert() {
   displayConversions(number, pound, kilogram, mass, "pounds", "kilograms");
 }
 
-button.addEventListener("click", function handleClick() {
+function handleClick() {
   if (numberInput.value > 0) {
     lengthConvert();
     massConvert();
     volumeConvert();
     button.removeEventListener("click", handleClick);
     button.disabled = true;
+  }
+}
+
+button.addEventListener("click", handleClick);
+
+numberInput.addEventListener("input", () => {
+  if (numberInput.value > 0) {
+    if (button.disabled) {
+      button.disabled = false;
+      button.addEventListener("click", handleClick);
+    }
   }
 });
