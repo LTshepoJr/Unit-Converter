@@ -44,9 +44,11 @@ function massConvert() {
 }
 
 button.addEventListener("click", function handleClick() {
-  lengthConvert();
-  massConvert();
-  volumeConvert();
-  button.removeEventListener("click", handleClick);
-  button.disabled = true;
+  if (numberInput.value > 0) {
+    lengthConvert();
+    massConvert();
+    volumeConvert();
+    button.removeEventListener("click", handleClick);
+    button.disabled = true;
+  }
 });
